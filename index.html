@@ -8,6 +8,19 @@
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     </head>
     <body>
+        <script>
+            let shown = false;
+            function toggle() {
+                const el = document.getElementById("menu");
+                if (shown) {
+                    el.style.transform = "translate(100%, 0)";
+                    shown = false;
+                } else {
+                    el.style.transform = "translate(0, 0)";
+                    shown = true;
+                }
+            }
+        </script>
         <nav
             class="sticky top-0 bg-white/50 backdrop-blur-xl w-full flex flex-row xl:justify-center z-2"
         >
@@ -15,7 +28,9 @@
                 class="xl:hidden flex flex-row grow items-center justify-between px-5 py-5"
             >
                 <img src="/softpoint/assets/images/logo.svg" />
-                <img src="/softpoint/assets/images/burger.svg" />
+                <button onclick="toggle()">
+                    <img src="/softpoint/assets/images/burger.svg" />
+                </button>
             </div>
             <div
                 class="hidden xl:flex flex-row items-center w-full max-w-305 justify-between py-6"
@@ -36,6 +51,18 @@
                 </div>
             </div>
         </nav>
+        <div
+            class="fixed top-0 right-0 left-0 bottom-0 z-3 bg-white/50 backdrop-blur-xl flex flex-col items-center justify-center gap-8 transition"
+            id="menu"
+            onclick="toggle()"
+            style="transform: translate(100%, 0)"
+        >
+            <a class="text-xl" href="#features">Features</a>
+            <a class="text-xl" href="#download">Download</a>
+            <a class="text-xl" href="#pricing">Pricing</a>
+            <a class="text-xl" href="#pricing">Login</a>
+            <a class="text-xl" href="#pricing">Sign Up</a>
+        </div>
         <main class="max-w-screen overflow-hidden">
             <section class="flex justify-center">
                 <div
