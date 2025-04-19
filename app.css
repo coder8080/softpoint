@@ -28,4 +28,36 @@
 
 body {
     font-family: Poppins;
+    color: #021206;
+}
+
+/* Marquee styles */
+.marquee {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: #f6fcfa;
+    --gap: 3rem;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+}
+
+.marquee__content {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    gap: var(--gap);
+    min-width: 100%;
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
 }
