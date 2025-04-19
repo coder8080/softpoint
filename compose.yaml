@@ -1,0 +1,9 @@
+services:
+  front:
+    image: nginx:stable-alpine
+    container_name: softpoint
+    volumes:
+      - ./:/usr/share/nginx/html:ro
+    ports:
+      - 3000:80
+    restart: no
