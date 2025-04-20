@@ -12,11 +12,14 @@
             let shown = false;
             function toggle() {
                 const el = document.getElementById("menu");
+                const body = document.body;
                 if (shown) {
                     el.style.transform = "translate(100%, 0)";
+                    body.style.overflow = "auto";
                     shown = false;
                 } else {
                     el.style.transform = "translate(0, 0)";
+                    body.style.overflow = "hidden";
                     shown = true;
                 }
             }
@@ -103,10 +106,19 @@
                         >
                             <img
                                 src="/softpoint/assets/images/googleplay.webp"
+                                srcset="
+                                    /softpoint/assets/images/googleplay@2x.webp 2x,
+                                    /softpoint/assets/images/googleplay@3x.webp 3x
+                                "
+                                sizes=""
                                 class="h-8"
                             />
                             <img
                                 src="/softpoint/assets/images/appstore.webp"
+                                srcset="
+                                    /softpoint/assets/images/appstore@2x.webp 2x,
+                                    /softpoint/assets/images/appstore@3x.webp 3x
+                                "
                                 class="h-8"
                             />
                         </div>
@@ -115,6 +127,10 @@
                         <img
                             class="max-w-full"
                             src="/softpoint/assets/images/statlaptop.webp"
+                            srcset="
+                                /softpoint/assets/images/statlaptop@2x.webp 2x,
+                                /softpoint/assets/images/statlaptop@3x.webp 3x
+                            "
                         />
                     </div>
                 </div>
@@ -123,44 +139,84 @@
                 <div class="marquee__content">
                     <img
                         src="/softpoint/assets/images/google.webp"
+                        srcset="
+                            /softpoint/assets/images/google@2x.webp 2x,
+                            /softpoint/assets/images/google@3x.webp 3x
+                        "
                         class="h-15"
                     />
                     <img
                         src="/softpoint/assets/images/avast.webp"
+                        srcset="
+                            /softpoint/assets/images/avast@2x.webp 2x,
+                            /softpoint/assets/images/avast@3x.webp 3x
+                        "
                         class="h-15"
                     />
                     <img
                         src="/softpoint/assets/images/ebay.webp"
+                        srcset="
+                            /softpoint/assets/images/ebay@2x.webp 2x,
+                            /softpoint/assets/images/ebay@3x.webp 3x
+                        "
                         class="h-15"
                     />
                     <img
                         src="/softpoint/assets/images/paypal.webp"
+                        srcset="
+                            /softpoint/assets/images/paypal@2x.webp 2x,
+                            /softpoint/assets/images/paypal@3x.webp 3x
+                        "
                         class="h-15"
                     />
                     <img
                         src="/softpoint/assets/images/hubspot.webp"
+                        srcset="
+                            /softpoint/assets/images/hubspot@2x.webp 2x,
+                            /softpoint/assets/images/hubspot@3x.webp 3x
+                        "
                         class="h-15"
                     />
                 </div>
                 <div class="marquee__content">
                     <img
                         src="/softpoint/assets/images/google.webp"
+                        srcset="
+                            /softpoint/assets/images/google@2x.webp 2x,
+                            /softpoint/assets/images/google@3x.webp 3x
+                        "
                         class="h-15"
                     />
                     <img
                         src="/softpoint/assets/images/avast.webp"
+                        srcset="
+                            /softpoint/assets/images/avast@2x.webp 2x,
+                            /softpoint/assets/images/avast@3x.webp 3x
+                        "
                         class="h-15"
                     />
                     <img
                         src="/softpoint/assets/images/ebay.webp"
+                        srcset="
+                            /softpoint/assets/images/ebay@2x.webp 2x,
+                            /softpoint/assets/images/ebay@3x.webp 3x
+                        "
                         class="h-15"
                     />
                     <img
                         src="/softpoint/assets/images/paypal.webp"
+                        srcset="
+                            /softpoint/assets/images/paypal@2x.webp 2x,
+                            /softpoint/assets/images/paypal@3x.webp 3x
+                        "
                         class="h-15"
                     />
                     <img
                         src="/softpoint/assets/images/hubspot.webp"
+                        srcset="
+                            /softpoint/assets/images/hubspot@2x.webp 2x,
+                            /softpoint/assets/images/hubspot@3x.webp 3x
+                        "
                         class="h-15"
                     />
                 </div>
@@ -314,13 +370,19 @@
                     </div>
                 </div>
                 <div class="flex-3">
-                    <img src="/softpoint/assets/images/stat.webp" />
+                    <img
+                        src="/softpoint/assets/images/stat.webp"
+                        srcset="
+                            /softpoint/assets/images/stat@2x.webp 2x,
+                            /softpoint/assets/images/stat@3x.webp 3x
+                        "
+                    />
                 </div>
             </secion>
             <section
-                class="mt-15 xl:mt-20 flex flex-col xl:flex-row-reverse xl:items-center px-6 xl:pr-40 gap-6 max-w-[1500px] mx-auto"
+                class="mt-15 xl:mt-0 flex flex-col xl:flex-row-reverse xl:items-center px-6 xl:pr-40 gap-6 max-w-[1500px] mx-auto"
             >
-                <div class="flex-2">
+                <div class="flex-2 xl:mb-30">
                     <h1
                         class="text-[32px]/[140%] xl:text-[45px]/[140%] font-semibold"
                     >
@@ -340,11 +402,17 @@
                     </p>
                 </div>
                 <div class="flex-3">
-                    <img src="/softpoint/assets/images/serving.webp" />
+                    <img
+                        src="/softpoint/assets/images/serving.webp"
+                        srcset="
+                            /softpoint/assets/images/serving@2x.webp 2x,
+                            /softpoint/assets/images/serving@3x.webp 3x
+                        "
+                    />
                 </div>
             </section>
             <section
-                class="mt-15 xl:mt-20 px-6 pt-10 xl:px-38 xl:pt-22 xl:pb-28 relative bg-[#F6FCFA] max-w-375 mx-auto"
+                class="mt-15 xl:mt-0 px-6 pt-10 xl:px-38 xl:pt-22 xl:pb-28 relative bg-[#F6FCFA] max-w-375 mx-auto"
                 id="download"
             >
                 <div class="xl:w-2/5">
@@ -371,7 +439,13 @@
                 <div
                     class="mt-10 xl:mt-0 xl:absolute xl:w-3/5 xl:top-0 xl:right-0 xl:-translate-y-1/6 xl:translate-x-1/10"
                 >
-                    <img src="/softpoint/assets/images/laptop.webp" />
+                    <img
+                        src="/softpoint/assets/images/laptop.webp"
+                        srcset="
+                            /softpoint/assets/images/laptop@2x.webp 2x,
+                            /softpoint/assets/images/laptop@3x.webp 3x
+                        "
+                    />
                 </div>
             </section>
             <section class="mt-15 px-6 flex flex-col items-center" id="pricing">
