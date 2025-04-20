@@ -42,18 +42,33 @@
     </head>
     <body>
         <script>
-            let shown = false;
-            function toggle() {
+            let menuShown = false;
+            function toggleMenu() {
                 const el = document.getElementById("menu");
                 const body = document.body;
-                if (shown) {
+                if (menuShown) {
                     el.style.transform = "translate(100%, 0)";
                     body.style.overflow = "auto";
-                    shown = false;
+                    menuShown = false;
                 } else {
                     el.style.transform = "translate(0, 0)";
                     body.style.overflow = "hidden";
-                    shown = true;
+                    menuShown = true;
+                }
+            }
+
+            let switchOn = true;
+            function toggleSwitch() {
+                const el = document.getElementById("switch");
+                const sq = document.getElementById("switch-sq");
+                if (switchOn) {
+                    el.style.backgroundColor = "#FF9A9A";
+                    sq.style.marginLeft = "0px";
+                    switchOn = false;
+                } else {
+                    el.style.backgroundColor = "#74DAAD";
+                    sq.style.marginLeft = "calc(100% - 16px)";
+                    switchOn = true;
                 }
             }
         </script>
@@ -64,7 +79,7 @@
                 class="xl:hidden flex flex-row grow items-center justify-between px-5 py-5"
             >
                 <img src="/softpoint/assets/images/logo.svg" alt="Logo" />
-                <button onclick="toggle()" aria-label="Open Menu">
+                <button onclick="toggleMenu()" aria-label="Open Menu">
                     <img
                         src="/softpoint/assets/images/burger.svg"
                         alt="Menu icon"
@@ -94,7 +109,7 @@
         <div
             class="fixed top-0 right-0 left-0 bottom-0 z-3 bg-white/50 backdrop-blur-xl flex flex-col items-center justify-center gap-8 transition"
             id="menu"
-            onclick="toggle()"
+            onclick="toggleMenu()"
             style="transform: translate(100%, 0)"
         >
             <a class="text-xl" href="#features">Features</a>
@@ -574,9 +589,16 @@
                 <div class="flex flex-row gap-4 mt-9">
                     <p class="text-xl">Monthly</p>
                     <div
-                        class="rounded-md bg-[#74DAAD] w-15 h-7 flex flex-row justify-end p-[6px]"
+                        class="rounded-md w-15 h-7 p-[6px] transition"
+                        style="background-color: #74daad"
+                        id="switch"
+                        onclick="toggleSwitch()"
                     >
-                        <div class="rounded-sm w-4 h-4 bg-white"></div>
+                        <div
+                            class="rounded-sm w-4 h-4 bg-white transition-all"
+                            id="switch-sq"
+                            style="margin-left: calc(100% - 16px)"
+                        ></div>
                     </div>
                     <p class="text-xl">Quarterly</p>
                 </div>
