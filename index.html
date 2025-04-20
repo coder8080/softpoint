@@ -57,17 +57,28 @@
             }
 
             let switchOn = true;
-            function toggleSwitch() {
+
+            function setSwitch(value) {
+                if (value === switchOn) return;
+
                 const el = document.getElementById("switch");
                 const sq = document.getElementById("switch-sq");
-                if (switchOn) {
-                    el.style.backgroundColor = "#FF9A9A";
-                    sq.style.marginLeft = "0px";
-                    switchOn = false;
-                } else {
+                if (value) {
                     el.style.backgroundColor = "#74DAAD";
                     sq.style.marginLeft = "calc(100% - 16px)";
                     switchOn = true;
+                } else {
+                    el.style.backgroundColor = "#FF9A9A";
+                    sq.style.marginLeft = "0px";
+                    switchOn = false;
+                }
+            }
+
+            function toggleSwitch() {
+                if (switchOn) {
+                    setSwitch(false);
+                } else {
+                    setSwitch(true);
                 }
             }
         </script>
@@ -586,9 +597,14 @@
                     Empowered by Innovation.
                 </p>
                 <div class="flex flex-row gap-4 mt-9">
-                    <p class="text-xl">Monthly</p>
+                    <p
+                        class="text-xl cursor-pointer select-none"
+                        onclick="setSwitch(false)"
+                    >
+                        Monthly
+                    </p>
                     <div
-                        class="rounded-md w-15 h-7 p-[6px] transition"
+                        class="rounded-md w-15 h-7 p-[6px] transition cursor-pointer select-none"
                         style="background-color: #74daad"
                         id="switch"
                         onclick="toggleSwitch()"
@@ -599,13 +615,19 @@
                             style="margin-left: calc(100% - 16px)"
                         ></div>
                     </div>
-                    <p class="text-xl">Quarterly</p>
+                    <p
+                        class="text-xl cursor-pointer select-none"
+                        onclick="setSwitch(true)"
+                    >
+                        Quarterly
+                    </p>
                 </div>
                 <img
                     loading="lazy"
                     src="/softpoint/assets/images/discount.svg"
-                    class="mt-2 w-[190px]"
+                    class="mt-2 w-[190px] cursor-pointer"
                     alt="Arrow"
+                    onclick="setSwitch(true)"
                 />
                 <div class="flex flex-col xl:flex-row gap-8 mt-10">
                     <div
