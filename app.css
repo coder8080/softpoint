@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 @font-face {
     src: url("/softpoint/assets/fonts/Poppins-Regular.ttf");
     font-family: Poppins;

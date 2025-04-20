@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "dev": "concurrently \"npx @tailwindcss/cli -i ./app.css -o ./styles.css --watch\" \"docker compose up --build\"",
+    "build": "npx @tailwindcss/cli -i ./app.css -o ./styles.css"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.4",
+    "concurrently": "^9.1.2",
+    "tailwindcss": "^4.1.4"
+  }
+}
