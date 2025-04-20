@@ -18,6 +18,19 @@ jobs:
         id: checkout
         uses: actions/checkout@v4
 
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ">=22"
+
+      - name: Install dependencies
+        id: install
+        run: npm install
+
+      - name: Build
+        id: build
+        run: npm run build
+
       - name: Upload static files as artifact
         id: deployment
         uses: actions/upload-pages-artifact@v3
