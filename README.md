@@ -3,8 +3,8 @@
 <div align="center">
 
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
-[![Github Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=github%20Pages&logoColor=white)](https://coder8080.github.io/divesea)
-[![Github Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/coder8080/divesea/actions)
+[![Github Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=github%20Pages&logoColor=white)](https://coder8080.github.io/softpoint)
+[![Github Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/coder8080/softpoint/actions)
 [![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)](https://docker.com)
 
   <img src="assets/favicon.old/favicon.png" alt="Logo" width="100">
@@ -21,8 +21,8 @@
 
 ## About The Project
 
-[![SoftPoint screenshot](assets/screenshots/site.png)](https://coder8080.github.io/divesea/)
-[![LightHouse Screenshot](assets/screenshots/lighthouse.png)](https://coder8080.github.io/divesea/)
+[![SoftPoint screenshot](assets/screenshots/site.png)](https://coder8080.github.io/softpoint/)
+[![LightHouse Screenshot](assets/screenshots/lighthouse.png)](https://coder8080.github.io/softpoint/)
 
 Built from [figma](https://www.figma.com/design/I7Y2VDqbXYD5sZLF7mk92y/Soft-Point). Performant, accessible, adaptive, SEO-optimized.
 
