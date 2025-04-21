@@ -100,6 +100,6 @@ Project Link: [https://github.com/coder8080/softpoint](https://github.com/coder8
 
 * [Figma template](https://www.figma.com/design/I7Y2VDqbXYD5sZLF7mk92y/Soft-Point)
 * [README template](https://github.com/othneildrew/Best-README-Template)
-* [Iphone frame asset](https://www.vecteezy.com/png/42538623-white-smartphone-mockup-blank-screen-isolated-on-transparent-background-png-smartphone-mockup-frame)
+* [IPhone frame asset](https://www.vecteezy.com/png/42538623-white-smartphone-mockup-blank-screen-isolated-on-transparent-background-png-smartphone-mockup-frame)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

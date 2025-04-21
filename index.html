@@ -89,7 +89,11 @@
                 class="xl:hidden flex flex-row grow items-center justify-between px-5 py-5"
             >
                 <img src="/softpoint/assets/images/logo.svg" alt="Logo" />
-                <button onclick="toggleMenu()" aria-label="Open Menu">
+                <button
+                    onclick="toggleMenu()"
+                    aria-label="Open Menu"
+                    class="cursor-pointer"
+                >
                     <img
                         src="/softpoint/assets/images/burger.svg"
                         alt="Menu icon"
@@ -117,16 +121,16 @@
             </div>
         </nav>
         <div
-            class="fixed top-0 right-0 left-0 bottom-0 z-3 bg-white/50 backdrop-blur-xl flex flex-col items-center justify-center gap-8 transition"
+            class="fixed top-0 right-0 left-0 bottom-0 z-3 bg-white/50 backdrop-blur-xl flex flex-col items-center justify-center transition select-none"
             id="menu"
             onclick="toggleMenu()"
             style="transform: translate(100%, 0)"
         >
-            <a class="text-xl" href="#features">Features</a>
-            <a class="text-xl" href="#download">Download</a>
-            <a class="text-xl" href="#pricing">Pricing</a>
-            <a class="text-xl" href="#pricing">Login</a>
-            <a class="text-xl" href="#pricing">Sign Up</a>
+            <a class="text-xl py-4" href="#features">Features</a>
+            <a class="text-xl py-4" href="#download">Download</a>
+            <a class="text-xl py-4" href="#pricing">Pricing</a>
+            <a class="text-xl py-4" href="#pricing">Login</a>
+            <a class="text-xl py-4" href="#pricing">Sign Up</a>
         </div>
         <main class="max-w-screen overflow-hidden">
             <section class="flex justify-center">
